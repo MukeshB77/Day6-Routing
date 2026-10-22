@@ -3,13 +3,19 @@ import About from './about.jsx'
 import Home from './home.jsx'
 import User from './user.jsx'
 import './App.css'
+import { ThemeContext } from './context/ThemeContext.jsx'
+import { useContext } from 'react'
+
 
 function App() {
+   const{theme,toggleTheme}=useContext(ThemeContext);
   return (
     <BrowserRouter>
+  
 
-    
-      <div className="site-shell">
+      <div className="site-shell"
+      //  data-theme={theme}
+       >
         <header className="site-header">
           <Link className="brand" to="/home" aria-label="Mukesh's resume home">
             MB<span></span>
@@ -18,6 +24,8 @@ function App() {
             <NavLink to="/home">Home</NavLink>
             <NavLink to="/about">About</NavLink>
             <NavLink to="/user">Skills</NavLink>
+            <button onClick={toggleTheme}
+            >{theme}</button>
           </nav>
         </header>
 

@@ -16,6 +16,10 @@
   --surface: #fcfdfa;
   --soft-surface: #f1f4ef;
 }
+:root[data-theme='dark'] {
+      color:#fcfdfa;
+      background: #29332b;
+}
 
 * {
   box-sizing: border-box;
