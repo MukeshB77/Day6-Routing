@@ -1,0 +1,33 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #50584f;
+  background: #f7f8f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  --ink: #29332b;
+  --body-text: #59635a;
+  --accent: #748774;
+  --accent-hover: #586b59;
+  --accent-light: #e9eee7;
+  --line: #e3e7e0;
+  --surface: #fcfdfa;
+  --soft-surface: #f1f4ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
